@@ -143,3 +143,17 @@ python score.py \
 ```
 
 </details>
+
+
+## Declaration
+The dataset we're using is an aggregation of publicly accessible datasets licensed under the Creative Commons license (CC-BY) or other open-source licenses. We've meticulously adhered to all required legal procedures to incorporate this data into our research, recognizing the importance of transparency in data licensing for proper attribution and suitable data utilization. 
+Our dataset also encompasses images derived from publicly accessible datasets and language data created through the GPT-4V api. While measures have been put in place to secure suitable content, we acknowledge the potential existence of problematic content. Should you come across any such content, we urge you to inform us immediately so we can make the necessary adjustments to sustain a dataset free from inappropriate content. We are unwavering in our commitment to maintain a high-quality, ethically responsible dataset and promise to uphold principles of privacy and transparency throughout our work.
+
+
+## Citing
+If you find this repository helpful, please consider citing it:
+```
+
+
+```
+
