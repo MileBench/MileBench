@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 
 # MileBench 🛣️
 
-A Multi-modal Long-context Benchmark for MLLMs
+This repo contains evaluation code for the paper "MileBench: Benchmarking MLLMs in Long Context".
 
 <center>
 
