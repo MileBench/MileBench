@@ -144,6 +144,9 @@ python score.py \
 
 </details>
 
+## License
+All software is licensed under the Apache License, Version 2.0 (Apache 2.0).
+All other materials are licensed under the Creative Commons Attribution 4.0 International License (CC-BY).
 
 ## Declaration
 The dataset we're using is an aggregation of publicly accessible datasets licensed under the Creative Commons license (CC-BY) or other open-source licenses. We've meticulously adhered to all required legal procedures to incorporate this data into our research, recognizing the importance of transparency in data licensing for proper attribution and suitable data utilization. 
