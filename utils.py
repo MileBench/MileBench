@@ -71,7 +71,7 @@ class MileBenchDataset(Dataset):
         # Set choice_list for multi-choice QA
         if 'choice_list' in ann['task_instance'].keys():
             choice_str = '\nChoice list: \n'
-            choice_str += '\n'.join([f'{chr(65+idx)}. {item}' 
+            choice_str += '\n'.join([f'{chr(65+idx)}. ' if len(ann['task_instance']['choice_list'])<=26 else '' + '{item}' 
                 for idx, item in enumerate(ann['task_instance']['choice_list'])])
             choice_str += '\nYour answer is: '
             context += choice_str
