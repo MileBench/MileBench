@@ -1,3 +1,15 @@
+
+__pycache__
+workers/__pycache__
+data/*
+logs
+outputs
+outputs_combine_1
+packages
+models
+!data/combine_images.py
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
