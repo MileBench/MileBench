@@ -16,17 +16,15 @@ def main(args):
     ########################## Set Dataset Taxonomy ##########################
     dataset_list={
         'Realistic Temporal': [
-            'action_localization', 'action_prediction', 'action_sequence', 
-            'character_order', 'counterfactual_inference', 'egocentric_navigation', 
-            'moving_attribute', 'moving_direction', 'object_existence', 'object_interaction', 
-            'object_shuffle', 'scene_transition', 'state_change', 
-            
+            'ActionLocalization', 'ActionPrediction', 'ActionSequence', 'CharacterOrder', 
+            'CounterfactualInference', 'EgocentricNavigation', 'MovingAttribute', 'MovingDirection', 
+            'ObjectExistence', 'ObjectInteraction', 'ObjectShuffle', 'SceneTransition', 'StateChange'
         ],
         'Realistic Semantic': [
             'ALFRED','CLEVR-Change','DocVQA','IEdit','MMCoQA','MultiModalQA',
             'nuscenes','OCR-VQA','SlideVQA','Spot-the-Diff','TQA','WebQA','WikiVQA'
         ],
-        'Diagnostic': ['GPR1200','ImageNeedleInAHaystack','TextNeedleInAHaystack']
+        'Diagnostic': ['TextNeedleInAHaystack', 'ImageNeedleInAHaystack', 'GPR1200']
     }
 
     ########################## Collect Evaluation Result ##########################

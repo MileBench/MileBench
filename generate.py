@@ -101,10 +101,15 @@ def main(args):
     for n_img, sub_data in data_dict.items():
         print(f'Proceeding {n_img}-length images samples | Num: {len(sub_data)}')
         lc_dataset = MileBenchDataset(
-                        sub_data,
-                        core_annotation['meta_data']['task_instruction'],
-                        img_dir,
-                        combine_image)
+                        annotation=sub_data,
+                        task_instructions=core_annotation['meta_data']['task_instruction'],
+                        img_dir=img_dir,
+                        max_context_len=config.max_context_len,
+                        n_tokens_per_image=config.n_tokens_per_image,
+                        tokenizer=worker.tokenizer,
+                        dataset_name=dataset_name,
+                        combine_image=combine_image,
+                        )
         lc_dataloader = DataLoader(dataset=lc_dataset,
                                 batch_size=max(int(args.batch_image/n_img),1),
                                 shuffle=False,
