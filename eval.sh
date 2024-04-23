@@ -10,8 +10,7 @@ MODEL_CONFIG_PATH=configs/model_configs.yaml
 gpu_num=4
 
 for model in llava-v1.5-7b; do
-    for dataset_name in action_localization action_prediction action_sequence object_existence object_interaction moving_attribute object_shuffle egocentric_navigation moving_direction counterfactual_inference state_change character_order scene_transition ALFRED CLEVR-Change DocVQA IEdit MMCoQA MultiModalQA nuscenes OCR-VQA SlideVQA Spot-the-Diff TQA WebQA WikiVQA GPR1200 TextNeedleInAHaystack ImageNeedleInAHaystack; do
-
+    for dataset_name in ALFRED ActionLocalization ActionPrediction ActionSequence CLEVR-Change CharacterOrder CounterfactualInference DocVQA EgocentricNavigation GPR1200 IEdit ImageNeedleInAHaystack MMCoQA MovingAttribute MovingDirection MultiModalQA OCR-VQA ObjectExistence ObjectInteraction ObjectShuffle SceneTransition SlideVQA Spot-the-Diff StateChange TQA TextNeedleInAHaystack WebQA WikiVQA nuscenes; do
         # Set batch size: max(int(batch_image/n_img),1)
         if [ ${dataset_name} = "MMCoQA" ] || [ ${dataset_name} = "NeedleInAHaystack" ] || [ ${dataset_name} = "GPR1200" ]
         then

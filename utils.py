@@ -141,10 +141,6 @@ class MileBenchDataset(Dataset):
         ret_img_list = []
         image_start = False # used for later, deciding we start with text string or image placeholder.
 
-        # context = f"text1{image_placeholder}texts222{image_placeholder}asdfae".split(image_placeholder)[::-1]
-        # context="Your Main Goal:  Put a cold mug in the cupboard.  Step Details: <ImageHere>Step#1: Turn left and walk to the window then turn left and walk to the coffee maker. <ImageHere> Current Step: ".split(image_placeholder)[::-1]
-        # raw_img_list = ['img1', 'img2']
-
         for fragment in context:
             # add the text first
             cur_ids = self.tokenizer(fragment, add_special_tokens=False).input_ids
@@ -196,8 +192,6 @@ class MileBenchDataset(Dataset):
             "raw_img_list": ret_img_list, # a list of images
             "response": str(ann['response'])
         }
-
-
 
     def collate_fn(self, batch):
         """
