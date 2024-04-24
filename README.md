@@ -16,6 +16,8 @@ Here are some ideas to get you started:
 
 # MileBench 🛣️
 
+[**🌐 Homepage**](https://milebench.github.io/) | [**🤗 Dataset**](https://huggingface.co/datasets/FreedomIntelligence/MileBench/) | [**🤗 Paper**](https://milebench.github.io/) | [**📖 arXiv**](https://milebench.github.io/) | [**GitHub**](https://github.com/MileBench/MileBench)
+
 This repo contains evaluation code for the paper "MileBench: Benchmarking MLLMs in Long Context".
 
 <center>
@@ -28,21 +30,40 @@ This repo contains evaluation code for the paper "MileBench: Benchmarking MLLMs 
 * **[2024.4.15]** 🎉🎉🎉 MileBench is public!🎉🎉🎉
 
 
-## ℹ️ How to evaluate
+## Contents
+- [Introduction](#introduction)
+- [Dataset Preparation](#🤗-dataset-preparation)
+- [How to Evaluate](#ℹ️-how-to-evaluate)
+- [License](#license)
+- [Contact](#contact)
+- [Citation](#citation)
 
-### Environment Setup
 
-<details><summary>Click to expand</summary>
-   
+## Introduction
+
+We introduce **MileBench**, a pioneering benchmark designed to rigorously test the **M**ult**I**modal **L**ong-cont**E**xt capabilities of MLLMs. This benchmark comprises a mix of text and images, long contexts, multiple tasks, and tasks requiring both comprehension and generation. To systematically assess the capabilities of MLLM in multimodal long contexts, our benchmark consists of two distinct evaluation sets, **diagnostic evaluation** and **realistic evaluation**. The former explores the long-context recall abilities of MLLMs, using needle-in-a-haystack and image retrieval tasks, while the latter stress-tests the model in a manner akin to real-world conditions using both temporal multi-image tasks and semantic multi-image tasks.
+
+After evaluating 20 models, the closed-source Gemini 1.5 excelled in the realistic evaluation, achieving an impressive score of 54.7%, though it still falls short of a perfect 100% score. Meanwhile, GPT-4(Vision) managed to reach a peak score of 99.4% in the diagnostic evaluation. On the contrary, most open-source multimodal models struggled with long-context tasks. Only VILA and Qwen-VL-7B managed average scores of 44.4% and 37.2% in realistic and diagnostic evaluations respectively. These results underscore that there are *"miles to go"* towards fully-realized long-context MLLMs, prompting a call for increased research focus on such tasks, especially those involving numerous images.
+
+
+![MileBench Examples](MileBench.png)
+
+## Preparation
+
+### 🤗 Dataset Preparation
+
+The MileBench dataset comprises 6,440 samples from 29 datasets, with each sample containing multiple images. 
+The data has been archived on HuggingFace and can be downloaded from [this link](https://huggingface.co/datasets/FreedomIntelligence/MileBench/).
+Save the dataset under data folder.
+
+### 🤖 Environment Setup
+
 Install required packages:
 ```bash
 pip install -r requirements.txt
 ```
-Update `transformers` (we used `4.37.0.dev0`):
-```bash
-pip install git+https://github.com/huggingface/transformers
-```
-</details>
+
+## ℹ️ How to Evaluate
 
 ### Modify model configuration file
 
@@ -145,6 +166,9 @@ python score.py \
 </details>
 
 ## License
+[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-yellow.svg)](https://github.com/MileBench/MileBench/blob/main/LICENSE)
+[![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-orange.svg)](https://github.com/MileBench/MileBench/blob/main/DATA_LICENSE)
+
 All software is licensed under the Apache License, Version 2.0 (Apache 2.0).
 All other materials are licensed under the Creative Commons Attribution 4.0 International License (CC-BY).
 
@@ -153,7 +177,13 @@ The dataset we're using is an aggregation of publicly accessible datasets licens
 Our dataset also encompasses images derived from publicly accessible datasets and language data created through the GPT-4V api. While measures have been put in place to secure suitable content, we acknowledge the potential existence of problematic content. Should you come across any such content, we urge you to inform us immediately so we can make the necessary adjustments to sustain a dataset free from inappropriate content. We are unwavering in our commitment to maintain a high-quality, ethically responsible dataset and promise to uphold principles of privacy and transparency throughout our work.
 
 
-## Citing
+## Contact
+
+- Dingjie Song: bbsngg@outlook.com
+- Benyou Wang: wangbenyou@cuhk.edu.cn
+
+## Citation
+
 If you find this repository helpful, please consider citing it:
 ```
 
