@@ -32,8 +32,8 @@ This repo contains evaluation code for the paper "MileBench: Benchmarking MLLMs 
 
 ## Contents
 - [Introduction](#introduction)
-- [Dataset Preparation](#🤗-dataset-preparation)
-- [How to Evaluate](#ℹ️-how-to-evaluate)
+- [Dataset Preparation](#preparation)
+- [How to Evaluate](#ℹ%EF%B8%8F-how-to-evaluate)
 - [License](#license)
 - [Contact](#contact)
 - [Citation](#citation)
