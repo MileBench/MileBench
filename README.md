@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 
 # MileBench 🛣️
 
-[**🌐 Homepage**](https://milebench.github.io/) | [**🤗 Dataset**](https://huggingface.co/datasets/FreedomIntelligence/MileBench/) | [**🤗 Paper**](https://milebench.github.io/) | [**📖 arXiv**](https://milebench.github.io/) | [**GitHub**](https://github.com/MileBench/MileBench)
+[**🌐 Homepage**](https://milebench.github.io/) | [**🤗 Dataset**](https://huggingface.co/datasets/FreedomIntelligence/MileBench/) | [**🤗 Paper**](https://arxiv.org/pdf/2404.18532) | [**📖 arXiv**](https://arxiv.org/abs/2404.18532) | [**GitHub**](https://github.com/MileBench/MileBench)
 
 This repo contains evaluation code for the paper "MileBench: Benchmarking MLLMs in Long Context".
 
@@ -186,7 +186,13 @@ Our dataset also encompasses images derived from publicly accessible datasets an
 
 If you find this repository helpful, please consider citing it:
 ```
-
-
+@misc{song2024milebench,
+      title={MileBench: Benchmarking MLLMs in Long Context}, 
+      author={Dingjie Song and Shunian Chen and Guiming Hardy Chen and Fei Yu and Xiang Wan and Benyou Wang},
+      year={2024},
+      eprint={2404.18532},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
 
