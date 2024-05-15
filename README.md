@@ -53,7 +53,7 @@ After evaluating 20 models, the closed-source Gemini 1.5 excelled in the realist
 ### 🤗 Dataset Preparation
 
 The MileBench dataset comprises 6,440 samples from 29 datasets, with each sample containing multiple images. 
-The data has been archived on HuggingFace and can be downloaded from [this link](https://huggingface.co/datasets/FreedomIntelligence/MileBench/).
+The data has been archived on the cloud and can be downloaded from [HuggingFace link](https://huggingface.co/datasets/FreedomIntelligence/MileBench/) or [BaiduYun link](https://pan.baidu.com/s/1Q_dn_OCVGx1mZyWZOmrErQ?pwd=r3ha).
 Save the dataset under data folder.
 
 ### 🤖 Environment Setup
