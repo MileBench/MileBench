@@ -186,13 +186,11 @@ Our dataset also encompasses images derived from publicly accessible datasets an
 
 If you find this repository helpful, please consider citing it:
 ```
-@misc{song2024milebench,
-      title={MileBench: Benchmarking MLLMs in Long Context}, 
-      author={Dingjie Song and Shunian Chen and Guiming Hardy Chen and Fei Yu and Xiang Wan and Benyou Wang},
-      year={2024},
-      eprint={2404.18532},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@article{song2024milebench,
+  title={MileBench: Benchmarking MLLMs in Long Context},
+  author={Song, Dingjie and Chen, Shunian and Chen, Guiming Hardy and Yu, Fei and Wan, Xiang and Wang, Benyou},
+  journal={arXiv preprint arXiv:2404.18532},
+  year={2024}
 }
 ```
 
