@@ -27,6 +27,7 @@ This repo contains evaluation code for the paper "MileBench: Benchmarking MLLMs 
 
 ## 🌈 Update
 
+* **[2024.7.10]** 🎉🎉🎉 MileBench is accepted by **COLM24**!🎉🎉🎉
 * **[2024.4.15]** 🎉🎉🎉 MileBench is public!🎉🎉🎉
 
 
